@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: url-short,
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 0724886404Was
+    username: root
+    url: jdbc:mysql://localhost:3306/url-short
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      connect-timeout: 500ms
+      timeout: 500ms
+  cache:
+    type: redis
